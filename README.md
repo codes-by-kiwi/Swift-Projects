@@ -9,6 +9,6 @@ A random photo generator app which contains an image frame where the image chang
 A digital and touch - sensitive shop that allows users to buy jeans. 
 
 
-##ToDoList App
+## ToDoList App
 
 An app that allows users to enter tasks they need to complete everyday. 
