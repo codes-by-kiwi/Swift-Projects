@@ -16,3 +16,7 @@ An app that allows users to enter tasks they need to complete everyday. I made a
 
 I generated a calculator that performs different functions such as addition, division, multiplication , subtraction and percentage. All of these functions and numbers are added as buttons using an enum list type. The functions are made to work using switch statements and different kinds of numbers, mainly the running number and the current value. The running number is the previous number gotten on the calculator screen and the current value is the number currently being typed onto the screen.
 
+## Reminders App
+
+I created an app that sends reminders or notifications to users even when its turned off or running in the background only. This was acheived using the app's internal notification settings that tells whether the system has authorized the application to give notifications. 
+
