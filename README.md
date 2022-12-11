@@ -18,5 +18,5 @@ I generated a calculator that performs different functions such as addition, div
 
 ## Reminders App
 
-I created an app that sends reminders or notifications to users even when its turned off or running in the background only. This was acheived using the app's internal notification settings that tells whether the system has authorized the application to give notifications. 
+I created an app that sends reminders or notifications to users even when its turned off or running in the background only. This was achieved using the app's internal notification settings that tells whether the system has authorized the application to give notifications. 
 
