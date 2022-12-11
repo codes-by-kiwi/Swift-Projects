@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Remindersapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-RT-Zxe">
+                                <rect key="frame" x="32" y="99" width="350" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="fjX-yc-33h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZg-sq-sWa">
+                                <rect key="frame" x="32" y="153" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Psm-Vc-C20">
+                                <rect key="frame" x="32" y="237" width="350" height="216"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oez-92-cYT">
+                                <rect key="frame" x="144" y="473" width="126" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Schedule">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scheduleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oek-je-dK2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Psm-Vc-C20" firstAttribute="width" secondItem="XZg-sq-sWa" secondAttribute="width" id="2ge-QS-uTS"/>
+                            <constraint firstItem="Psm-Vc-C20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ps-FP-tBt"/>
+                            <constraint firstItem="XZg-sq-sWa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gcp-Fj-hh3"/>
+                            <constraint firstItem="XZg-sq-sWa" firstAttribute="width" secondItem="tdA-RT-Zxe" secondAttribute="width" id="J5M-Rf-8ds"/>
+                            <constraint firstItem="tdA-RT-Zxe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KfB-dA-ePt"/>
+                            <constraint firstItem="Oez-92-cYT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OpE-OT-0cd"/>
+                            <constraint firstItem="XZg-sq-sWa" firstAttribute="top" secondItem="tdA-RT-Zxe" secondAttribute="bottom" constant="20" id="PFh-3I-Zm1"/>
+                            <constraint firstItem="tdA-RT-Zxe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="YYX-Zz-wHL"/>
+                            <constraint firstItem="Psm-Vc-C20" firstAttribute="top" secondItem="XZg-sq-sWa" secondAttribute="bottom" constant="50" id="eon-qp-ggt"/>
+                            <constraint firstItem="Oez-92-cYT" firstAttribute="top" secondItem="Psm-Vc-C20" secondAttribute="bottom" constant="20" id="gMk-zg-Ovl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Psm-Vc-C20" id="8v1-U3-hQX"/>
+                        <outlet property="messageTF" destination="XZg-sq-sWa" id="2uy-sd-9tc"/>
+                        <outlet property="titleTF" destination="tdA-RT-Zxe" id="IrI-MK-SiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
